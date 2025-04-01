@@ -1,0 +1,35 @@
+.family-tree-container {
+    margin: 20px;
+    text-align: center;
+}
+
+.tree-root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tree-node {
+    margin: 10px;
+    text-align: center;
+}
+
+.node-content {
+    background: #e1f5fe;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.node-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.children {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

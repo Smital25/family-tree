@@ -1,0 +1,216 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Home Container */
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header */
+.header {
+  background-color: #075E54;
+  padding: 20px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #075E54, #66bb6a);
+  color: #fff;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn-container {
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 8px 12px;  /* Reduced padding for a smaller size */
+  margin: 3px;
+  width: 100px;       /* Reduced width */
+  background-color: #fff;
+  color: #075E54;
+  border: 2px solid #075E54;
+  border-radius: 4px;  /* Slightly smaller border radius */
+  font-weight: bold;
+  font-size: 14px;  /* Reduced font size */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #075E54;
+  color: #fff;
+}
+
+
+/* Floating Section - Reviews */
+.floating-section {
+  padding: 40px 20px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.floating-card {
+  background-color: #075E54;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.floating-card:hover {
+  transform: scale(1.05);
+}
+
+.floating-card img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Template Section - Benefits and Features */
+.template-section {
+  padding: 40px 20px;
+  background-color: #f1f1f1;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.template-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.benefit-card, .feature-card, .step-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 280px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card:hover, .feature-card:hover, .step-card:hover {
+  transform: scale(1.05);
+}
+
+.benefit-card img, .feature-card img, .step-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* About Section */
+.about-section {
+  padding: 40px 20px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.about-content {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-content strong {
+  color: #075E54;
+}
+
+/* Popup Image View */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+
+.popup:hover {
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background-color: #075E54;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer h3 {
+  font-size: 1.5rem;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.add-member-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 25px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+    width: 50%;
+    max-width: 650px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    padding: 14px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #11924d;
+    box-shadow: 0 0 10px rgba(17, 146, 77, 0.2);
+    outline: none;
+}
+
+.photo-upload {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align buttons horizontally */
+    gap: 10px; /* Space between photo upload and button */
+    margin-top: 15px;
+    width: 100%; /* Ensure that photo upload and button fit within the container */
+}
+
+.photo-label {
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #11924d;
+}
+
+.photo-label:hover {
+    color: #0a6e38;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.photo-preview {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-btn {
+    background: linear-gradient(135deg, #11924d, #0a6e38);
+    color: white;
+    padding: 10px 15px;  /* Reduced padding to make the button smaller */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;  /* Reduced font size */
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: auto;  /* Let the button size adjust based on content */
+}
+
+.add-btn:hover {
+    background: linear-gradient(135deg, #0a6e38, #08562b);
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.add-btn:active {
+    transform: translateY(0);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.close-btn:hover {
+    background: #e04343;
+    transform: scale(1.1);
+}
+
+.close-btn:active {
+    transform: scale(0.95);
+}
+
+.feedback {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    background-color: #eaf7ec;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .add-member-container {
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    .add-btn,
+    .close-btn {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .photo-preview {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-member-container {
+        width: 90%;
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    .add-btn,
+    .close-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .photo-preview {
+        width: 60px;
+        height: 60px;
+    }
+}
